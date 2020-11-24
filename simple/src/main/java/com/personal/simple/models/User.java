@@ -45,6 +45,14 @@ public class User {
         this.email = email;
     }
 
+    public long getUserid() {
+        return this.userid;
+    }
+
+    public void setUserid(long userid) {
+        this.userid = userid;
+    }
+
     public String getUsername() {
 		return this.username;
 	}

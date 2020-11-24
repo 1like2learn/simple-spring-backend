@@ -6,18 +6,13 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class UserRolesId implements Serializable{
-    
+
     private long user;
 
     private long role;
 
     public UserRolesId() {
 
-    }
-
-    public UserRolesId(long user, long role) {
-        this.user = user;
-        this.role = role;
     }
 
     public long getUser() {
@@ -36,4 +31,21 @@ public class UserRolesId implements Serializable{
         this.role = role;
     }
 
+    @Override
+    public boolean equals(Object o) {
+
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        UserRolesId that = (UserRolesId) o;
+        return user == that.user && role == that.role;
+    }
+
+    @Override
+    public int hashCode() {
+        return 37;
+    }
 }
