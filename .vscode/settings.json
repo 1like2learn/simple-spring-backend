@@ -1,9 +1,14 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
     "cSpell.words": [
+        "Embeddable",
         "Servlet",
+        "createnewuser",
         "newuser",
+        "roleid",
+        "rolerepos",
         "userid",
-        "userrepos"
+        "userrepos",
+        "userroles"
     ]
 }
