@@ -39,6 +39,7 @@ public class User {
     @JsonIgnoreProperties(value = "user", allowSetters = true)
     private Set<UserRoles> roles = new HashSet<>();
 
+    public User(){}
     public User(String username, String password, String email) {
         this.username = username;
         this.password = password;
@@ -75,5 +76,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Set<UserRoles> getRoles(){
+        return this.roles;
+    }
+
+    public void setRoles(Set<UserRoles> roles){
+        this.roles = roles;
     }
 }
