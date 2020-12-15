@@ -7,6 +7,11 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class UserRolesId implements Serializable{
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 3337253187621767088L;
+
     private long user;
 
     private long role;

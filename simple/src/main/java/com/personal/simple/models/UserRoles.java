@@ -16,6 +16,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @IdClass(UserRolesId.class)
 public class UserRoles extends Auditable implements Serializable {
     
+    /**
+     *
+     */
+    private static final long serialVersionUID = 4543191967401065677L;
+
     // Fields
     @Id
     @ManyToOne
