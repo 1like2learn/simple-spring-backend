@@ -109,7 +109,7 @@
     </dependencies>
 
     <build>
-        <finalName>like2learn-airbnb-api</finalName>
+        <finalName>like2learn-simple-backend</finalName>
 
         <plugins>
             <plugin>

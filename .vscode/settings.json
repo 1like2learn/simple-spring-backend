@@ -1,7 +1,10 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
     "cSpell.words": [
+        "Configurer",
         "Embeddable",
+        "OAUTHCLIENTID",
+        "OAUTHCLIENTSECRET",
         "Servlet",
         "createnewuser",
         "newuser",
