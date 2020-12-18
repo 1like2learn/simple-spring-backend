@@ -3,18 +3,28 @@ package com.personal.simple.models;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "roles")
 public class Role extends Auditable {
 
     // Define fields
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long roleid;
 
+    @Column( nullable = false, unique = true)
     private String name;
 
+    @OneToMany(
+        mappedBy = "role", 
+        cascade = CascadeType.ALL,
+        orphanRemoval = true
+    )
+    @JsonIgnoreProperties(value = "roles", allowSetters = true)
     private Set<UserRoles> users = new HashSet<>();
 
     // Constructor functions
