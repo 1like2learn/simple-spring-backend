@@ -1,3 +1,17 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "cSpell.words": [
+        "Configurer",
+        "Embeddable",
+        "OAUTHCLIENTID",
+        "OAUTHCLIENTSECRET",
+        "Servlet",
+        "createnewuser",
+        "newuser",
+        "roleid",
+        "rolerepos",
+        "userid",
+        "userrepos",
+        "userroles"
+    ]
 }

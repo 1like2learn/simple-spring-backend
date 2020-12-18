@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SimpleApplication<simple>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.personal.simple.SimpleApplication",
+            "projectName": "simple",
+            "args": ""
+        }
+    ]
+}
