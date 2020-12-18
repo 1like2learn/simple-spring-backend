@@ -87,7 +87,7 @@ public class RoleServiceImpl implements RoleService {
             throw new ResourceFoundException("User Roles are not updated through Role. See endpoint POST: users/user/{userid}/role/{roleid}");
         }
 
-        Role newRole = findRoleById(id); // see if user exists
+        findRoleById(id); // see if user exists
 
         rolerepos.updateRoleName(UserAuditing.getCurrentAuditor().get(), id, role.getName());
 
